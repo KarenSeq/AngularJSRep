@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html data-ng-app="myModule1">
+<head>
+<meta charset="ISO-8859-1">
+<title>Practice Angular JS Part-1</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<script src="ang1.js"></script>
+<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.min.js"></script>
+</head>
+
+<body>
+<div>
+<nav class="navbar navbar-default">
+<div class="navbar-header"><h1><a class="navnar-brand" href="#/">Welcome to the Arithmetic page :)</a></h1></div>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="#/add">Add</a></li>
+<li><a href="#/subtract">Subtract</a></li>
+</ul>
+</nav>
+</div>
+
+<div data-ng-view></div>
+</body>
+
+<!-- <body data-ng-controller="myCntrlr1">
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="form-group, col-md-4">
+			<div>
+				<h2>
+					<strong><i>Addition of Numbers:</i></strong>
+				</h2>
+			</div>
+			<br>
+			<br>
+			<div>
+				<label>Number 1:</label> <input class="form-control" type="text"
+					data-ng-model="number1">
+
+				<div
+					data-ng-class="{'alert-warning':number1.length === 3, 'alert-danger':number1.length > 3 }"
+					data-ng-if="number1.length > 2">
+					<h5 data-ng-if="number1.length === 3">Can have max 3 digits</h5>
+					<h5 data-ng-show="number1.length > 3">Should not have more
+						than 3 digits!</h5>
+				</div>
+
+
+
+				<br> <br> <label>Number 2:</label> <input
+					class="form-control" type="text" data-ng-model="number2"><br>
+				<br> <input class="form-control, btn btn-primary" type="button"
+					value="Add" data-ng-click="addNumbers()">
+
+				<h3 data-ng-hide="result ==='' ">Result is: {{result}}</h3>
+			</div>
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+</body> -->
+</html>

@@ -1,0 +1,45 @@
+<html>
+<body>
+	<div class="row">
+		<div class="col-md-4">
+		<my-dir my-name= "{{name}}" my-details='person' my-question = 'fullSentence(somePerson)'></my-dir>
+		</div>
+		<div class="form-group, col-md-4">
+			<div>
+				<h2>
+					<strong><i>Addition of Numbers:</i></strong>
+				</h2>
+			</div>
+			<br>
+			<br>
+			<div>
+				<label>Number 1:</label> <input class="form-control" type="text"
+					data-ng-model="number1">
+
+				<div
+					data-ng-class="{'alert-warning':number1.length === 3, 'alert-danger':number1.length > 3 }"
+					data-ng-if="number1.length > 2">
+					<h5 data-ng-if="number1.length === 3">Can have max 3 digits</h5>
+					<h5 data-ng-show="number1.length > 3">Should not have more
+						than 3 digits!</h5>
+				</div>
+
+
+
+				<br> <br> <label>Number 2:</label> <input
+					class="form-control" type="text" data-ng-model="number2"><br>
+				<br> <input class="form-control, btn btn-primary" type="button"
+					value="Add" data-ng-click="addNumbers()">
+
+				<h3 data-ng-hide="result ==='' ">Result is: {{result}}</h3>
+			</div>
+			<br><br>
+			<div>
+			<label>Thought for the day :)</label>
+			<input type="text"class="form-control" data-ng-model = "thoughtTextAdd">
+			</div>
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+</body> 
+</html>
